@@ -44,7 +44,7 @@ minima:
   # Minima date format.
   # The default value is "%b %d, %Y" (e.g. Nov 14, 2023) 
   # Refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this.
-  date_format: "%Y年%b月%d日"
+  date_format: "%Y年%m月%d日"
 
   # Social Media Links
   # Renders icons via Font Awesome Free webfonts CDN, based on ordered list of entries.
