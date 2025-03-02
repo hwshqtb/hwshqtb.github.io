@@ -18,7 +18,8 @@
   margin-bottom: 0;
   float: left;
   left: 40px;
-  background: url(../../hwshqtb.ico) no-repeat left center 40px;
+  background: url(../../hwshqtb.ico) no-repeat left center;
+  background-size: 40px;
 
   @include media-query($on-palm) {
     padding-right: 45px;
