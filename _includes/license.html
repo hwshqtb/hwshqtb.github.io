@@ -1,5 +1,7 @@
-{%- if page.license -%}
-    {{page.license}}
-{% else -%}
-    {{site.license}}
-{%- endif -%}
+<p>
+    {%- if page.license -%}
+        {{page.license}}
+    {% else -%}
+        {{site.license}}
+    {%- endif -%}
+</p>
