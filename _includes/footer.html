@@ -28,16 +28,8 @@
       {%- endif %}
       </div>
       <div class="footer-col">
-        <p>
-          {%- for tag in page.tags -%}
-            {{tag}}
-          {%- endfor %}
-        </p>
-        {%- if page.license -%}
-          {{page.license}}
-        {% else -%}
-          {{site.license}}
-        {%- endif -%}
+        {%- include tags.html -%}
+        {%- include license.html -%}
       </div>
     </div>
 

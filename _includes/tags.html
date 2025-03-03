@@ -1,0 +1,21 @@
+<head>
+    <style type="text/CSS">
+        div.tags {
+            display: inline-block; 
+        }
+        div.tag {
+            border: solid;
+            border-radius: 3px;
+            border-color: #000000;
+            background-color: #c0c0c0;
+            height: 20px;
+        }
+    </style>
+</head>
+
+<div class="tags">
+{%- for tag in page.tags -%}
+    <div class = "tag-item">{{tag}}</div>
+{%- endfor -%}
+</div>
+
