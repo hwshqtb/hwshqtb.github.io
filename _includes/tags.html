@@ -11,6 +11,6 @@
 
 <div class="tags">
     {%- for tag in page.tags -%}
-        <div class="tag-item">{{tag}}</div>
+        <a class="tag-item" href="/tags/{{tag}}">{{tag}}</a>
     {%- endfor -%}
 </div>
