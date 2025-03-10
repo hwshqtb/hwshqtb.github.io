@@ -1,6 +1,5 @@
 ---
 layout: post
-permalink: /programing-introduction-1-1.html
 
 title: 编程导论：1.1：计算机简史
 author: hwshqtb

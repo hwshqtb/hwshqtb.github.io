@@ -1,6 +1,5 @@
 ---
 layout: post
-permalink: /programing-introduction-0.html
 
 title: 编程导论：目录和前言
 author: hwshqtb
