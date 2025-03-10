@@ -15,9 +15,7 @@ module Jekyll
       safe true
       def generate(site)
         if site.layouts.key? 'tags-page'
-        // 如果你用的模板名称不是"tagpage.html"的话, 记得修改这里的名字
           dir = site.config['tags_pages'] || 'tag'
-          // 如果你想要自己定义tag单页存储的路径, 或者说是访问路径中的tag前缀, 可以在config里面设定 tag_dir 的值, 或者是直接改这里也行~
           site.tags.keys.each do |tag|
             write_tag_index(site, File.join(dir, tag), tag)
           end
