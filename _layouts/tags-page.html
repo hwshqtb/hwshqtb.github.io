@@ -1,0 +1,14 @@
+---
+layout: base
+---
+
+<nav id="bread">
+    <h2>有 {{ page.tag }} tag的页面</h2>
+</nav>
+<article>
+    <ul class="article-list">
+        {% for post in site.tags[page.tag] %}
+            <a href="{{post.url}}">{{ post.title }}</a>
+        {% endfor %}
+    </ul>
+</article>
