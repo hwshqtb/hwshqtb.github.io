@@ -44,8 +44,8 @@ excerpt: "刨析编程的定义为需求——功能——实现三段过程，�
 
 <table>
     <tr>
-        <th><code>int f() {<br>}</code></th>
-        <th><code>int f()<br>{<br>}</code></th>
+        <th><code>void f() {<br>}</code></th>
+        <th><code>void f()<br>{<br>}</code></th>
     </tr>
 </table>
 
