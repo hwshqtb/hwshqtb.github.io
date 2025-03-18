@@ -8,6 +8,7 @@ modified_date: 2025-03-18
 
 categories: programing
 tags: programing-introduction
+excerpt_separator: <!--excerpt-->
 ---
 
 刨析编程的定义为需求——功能——实现三段过程，并分析这三者。
