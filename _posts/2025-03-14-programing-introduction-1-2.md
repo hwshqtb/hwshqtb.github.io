@@ -87,12 +87,12 @@ excerpt: "刨析编程的定义为需求——功能——实现三段过程，�
 - 单体架构：将所有的功能写在一起。保证了编程速度和开发速度，牺牲了其他一切。
 - 分层架构：将所有功能组织为若干层，使得层之间的耦合尽可能的减少。便于各层各自维护和扩展。
 
-<div align=center><img src="../_images/三层架构.png" height="200"/><br><i>三层架构</i></div>
-<div align=center><img src="../_images/四层架构.png" height="200"/><br><i>四层架构</i></div>
+<div align=center><img src="../images/三层架构.png" height="200" title="三层架构"/><br><i>三层架构</i></div>
+<div align=center><img src="../images/四层架构.png" height="200" title="四层架构"/><br><i>四层架构</i></div>
 
 - 事件驱动架构：每个功能组织为一个模块（事件处理器），模块间的交互抽象为事件/消息，事件在模块发生变化时会产生。同时维护一个处理事件的队列（事件队列），接受模块产生的事件、通过（分发器）分发并由交给相应模块处理。能够高度控制交互发生的时间、次数和频率。
 
-<div align=center><img src="../_images/事件驱动架构.png" height="200"/><br><i>事件驱动架构</i></div>
+<div align=center><img src="../images/事件驱动架构.png" height="200"/><br><i>事件驱动架构</i></div>
 
 - 微服务架构：将每一个功能组织为相互独立、互相解构的部署单元。这些单元通过远程通信协议（比如REST、SOAP）联系。
 - 微内核架构：取一个最小的核心功能作为内核，其余功能（主要功能、业务逻辑等）组织为互相独立的、可独立加载和卸载、避免出现互相依赖、尽可能避免相互通讯的插件。
