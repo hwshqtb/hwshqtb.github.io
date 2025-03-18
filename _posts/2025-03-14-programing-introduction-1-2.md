@@ -32,20 +32,24 @@ excerpt: "刨析编程的定义为需求——功能——实现三段过程，�
 #### 可读性
 即编写的代码便于人类（尤指非代码的编写者）阅读和理解，不包括由于细节实现引起的阅读困难（比如使用了实现复杂的数据结构），也即代码规范，包括：
 - 命名规范，即标识符应具有意义。下方是四种常见的命名规范，大多情况下是这几种的结合：
-<table>
-<tr><th>匈牙利命名法（基本弃用）</th><th>驼峰式命名法</th><th>帕斯卡命名法</th><th>下划线命名法</th></tr>
-<tr><th><code>int iMyAge;</code></th><th><code>int myAge;</code></th><th><code>int MyAge;</code></th><th><code>int my_age;</code></th></tr>
-<tr><th><code>char cMyName[10];</code></th><th><code>char myName[10];</code></th><th><code>char MyName[10];</code></th><th><code>char my_name[10];</code></th></tr>
-<tr><th><code>float fManHeight;</code></th><th><code>float manHeight;</code></th><th><code>float ManHeight;</code></th><th><code>float man_height;</code></th></tr>
-</table>
+
+| 匈牙利命名法（基本弃用） | 驼峰式命名法 | 帕斯卡命名法 | 下划线命名法 |
+| :---: | :---: | :---: | :---: |
+| `int iMyAge;` | `int myAge;` | `int MyAge;` | `int my_age;` |
+| `char cMyName[10];` | `char myName[10];` | `char MyName[10];` | `char my_name[10];` |
+| `float fManHeight;` | `float manHeight;` | `float ManHeight;` | `float man_height;` |
 
 - 间距：`a = b + c;`和`a=b+c;`
 - 换行：
+
 <table>
-<tr><th><code>int f() {<br>}</code></th><th><code>int f()<br>{<br>}</code></th>
+    <tr>
+        <th><code>int f() {<br>}</code></th>
+        <th><code>int f()<br>{<br>}</code></th>
+    </tr>
 </table>
 
-- 缩进：使用``\t``还是空格，使用几个
+- 缩进：使用`\t`还是空格，使用几个
 - 注释：对于文件、功能、类、函数、语句等，在何种程度在何处以何种方式编写。
 - 所用的编程语言、外部引用库等的特殊规范
 
