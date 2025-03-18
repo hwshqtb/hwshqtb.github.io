@@ -8,9 +8,8 @@ modified_date: 2025-03-13
 
 categories: programing
 tags: programing-introduction
+excerpt: 通过编程语言、计算机及其用途之演变史，给出编程的定义。
 ---
-通过编程语言、计算机及其用途之演变史，给出编程的定义。
-<!--excerpt-->
 在讨论什么是编程之前，我们有必要回顾计算机的历史。
 
 ### 前电子计算机时代

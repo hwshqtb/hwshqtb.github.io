@@ -8,9 +8,8 @@ modified_date: 2025-03-10
 
 categories: programing
 tags: programing-introduction
+excerpt: ""
 ---
-
-<!--excerpt-->
 # 目录
 - 前言
 - 编程基础：程序员的自我修养
