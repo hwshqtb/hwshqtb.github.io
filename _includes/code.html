@@ -1,22 +1,29 @@
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
-<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-<div id="code-show-div">
-    <button id="code-edit" type="button" onclick="editFunction()">编辑</button>
-    <pre id="example-code"><code>#include &lt;stdio.h>
+
+<div>
+    <div id="code-show-div">
+        <button id="code-edit" type="button" onclick="editFunction()">编辑</button>
+        这个编辑器使用了<a href="http://coliru.stacked-crooked.com">Coliru</a>
+        <pre id="example-code"><code>#include &lt;stdio.h>
 int main() {
     printf("Hello, World!\n");
     return 0;
 }</code></pre>
-</div>
-<div id="code-edit-div" style="display: none;">
-    <button id="code-exit" type="button" onclick="exitFunction()">退出</button>
-    <button id="code-run" type="button" onclick="runFunction()">运行</button>
-    <pre contenteditable="plaintext-only" oninput="inputFunction()"><code id="real-code">#include &lt;stdio.h>
+    </div>
+    <div id="code-edit-div" style="display: none;">
+        <button id="code-exit" type="button" onclick="exitFunction()">退出</button>
+        <button id="code-run" type="button" onclick="runFunction()">运行</button>
+        这个编辑器使用了<a href="http://coliru.stacked-crooked.com">Coliru</a>
+        <pre contenteditable="plaintext-only" oninput="inputFunction()"><code id="real-code">#include &lt;stdio.h>
 int main() {
     printf("Hello, World!\n");
     return 0;
 }</code></pre>
+        <div>
+            <pre><code id="code-result"></code></pre>
+        </div>
+    </div>
 </div>
 
 <script>
@@ -29,14 +36,10 @@ int main() {
         document.getElementById("code-show-div").style.display = "block";
     }
     function runFunction() {
-        alert(1);
         var http = new XMLHttpRequest();
-        alert(2);
         http.open("POST", "http://coliru.stacked-crooked.com/compile", false);
-        alert(3);
         http.send(JSON.stringify({ "cmd": "g++ main.cpp && ./a.out", "src": document.getElementById("real-code").innerText }));
-        alert(4);
-        alert(http.response);
+        document.getElementById("code-result").innerText = http.response;
     }
     function inputFunction() {
         var selection = getSelection();
