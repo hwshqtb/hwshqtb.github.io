@@ -6,7 +6,7 @@
 </div>
 <div id="code-edit-div" style="display: none;">
     <button id="code-exit" type="button" onclick="exitFuntcion()">退出</button>
-    <button id="code-exit" type="button">运行</button>
+    <button id="code-run" type="button">运行</button>
 </div>
 <pre id="real-code"><code>#include &lt;stdio.h>
 int main() {
@@ -18,7 +18,7 @@ int main() {
 <script>
     function editFunction() {
         document.getElementById("code-show-div").style.display = "none";
-        document.getElementById("code-show-div").style.display = "block";
+        document.getElementById("code-edit-div").style.display = "block";
         document.getElementById("real-code").contentEditable = true;
     }
     function exitFuntcion() {
