@@ -2,17 +2,15 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
 
 <div class="code-snippet">
-    <div class="real-code-snippet">
-        <pre><code>
-            #include &lt;stdio.h>
-            int main() {
-                printf("Hello, World!\n");
-                return 0;
-            }
-        </code></pre>
-    </div>
+    <pre><code>
+        #include &lt;stdio.h>
+        int main() {
+            printf("Hello, World!\n");
+            return 0;
+        }
+    </code></pre>
     <script>
-        document.querySelectorAll("div.real-code-snippet").forEach(el => {
+        document.querySelectorAll("div.code-snippet").forEach(el => {
             hljs.highlightElement(el);
         });
     </script>
