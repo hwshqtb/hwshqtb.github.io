@@ -4,7 +4,7 @@ layout: post
 title: 编程导论：1.2：编程三段论
 author: hwshqtb
 license: <p xmlns:cc="http://creativecommons.org/ns#" >本文的授权方式为 <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Creative Commons Attribution 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt=""></a></p>
-modified_date: 2025-03-18
+modified_date: 2025-03-21
 
 categories: programing
 tags: programing-introduction
@@ -15,7 +15,7 @@ excerpt: "刨析编程的定义为需求——功能——实现三段过程，�
 
 在不考虑无代码编程的情况下，编程可分为三部分：
 - 用编程语言描述的实现；
-- 用形式语言描述的功能;
+- 用形式语言描述的功能；
 - 用自然语言描述的需求。
 
 接下来依次分析三个部分。
