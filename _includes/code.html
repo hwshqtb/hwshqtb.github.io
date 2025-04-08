@@ -3,28 +3,32 @@
 
 <div id="code-show-div">
     <button id="code-edit" type="button" onclick="editFunction()">编辑</button>
+    <pre id="example-code"><code>#include &lt;stdio.h>
+    int main() {
+        printf("Hello, World!\n");
+        return 0;
+    }
+    </code></pre>
 </div>
 <div id="code-edit-div" style="display: none;">
     <button id="code-exit" type="button" onclick="exitFuntcion()">退出</button>
     <button id="code-run" type="button">运行</button>
+    <pre id="real-code" contenteditable="true"><code>#include &lt;stdio.h>
+    int main() {
+        printf("Hello, World!\n");
+        return 0;
+    }
+    </code></pre>
 </div>
-<pre id="real-code"><code>#include &lt;stdio.h>
-int main() {
-    printf("Hello, World!\n");
-    return 0;
-}
-</code></pre>
 
 <script>
     function editFunction() {
         document.getElementById("code-show-div").style.display = "none";
         document.getElementById("code-edit-div").style.display = "block";
-        document.getElementById("real-code").contentEditable = true;
     }
     function exitFuntcion() {
         document.getElementById("code-edit-div").style.display = "none";
         document.getElementById("code-show-div").style.display = "block";
-        document.getElementById("real-code").contentEditable = false;
     }
     hljs.highlightAll();
 </script>
