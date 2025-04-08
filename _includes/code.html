@@ -4,21 +4,19 @@
 <div id="code-show-div">
     <button id="code-edit" type="button" onclick="editFunction()">编辑</button>
     <pre id="example-code"><code>#include &lt;stdio.h>
-    int main() {
-        printf("Hello, World!\n");
-        return 0;
-    }
-    </code></pre>
+int main() {
+    printf("Hello, World!\n");
+    return 0;
+}</code></pre>
 </div>
 <div id="code-edit-div" style="display: none;">
-    <button id="code-exit" type="button" onclick="exitFuntcion()">退出</button>
+    <button id="code-exit" type="button" onclick="exitFunction()">退出</button>
     <button id="code-run" type="button">运行</button>
-    <pre id="real-code" contenteditable="true"><code>#include &lt;stdio.h>
-    int main() {
-        printf("Hello, World!\n");
-        return 0;
-    }
-    </code></pre>
+    <pre id="real-code" contenteditable="true" oninput="inputFunction()">#include &lt;stdio.h>
+int main() {
+    printf("Hello, World!\n");
+    return 0;
+}</code></pre>
 </div>
 
 <script>
@@ -26,9 +24,12 @@
         document.getElementById("code-show-div").style.display = "none";
         document.getElementById("code-edit-div").style.display = "block";
     }
-    function exitFuntcion() {
+    function exitFunction() {
         document.getElementById("code-edit-div").style.display = "none";
         document.getElementById("code-show-div").style.display = "block";
+    }
+    function inputFunction() {
+        alert(event.data);
     }
     hljs.highlightAll();
 </script>
