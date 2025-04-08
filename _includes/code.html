@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+
+<div class="code-snippet">
+    <div class="real-code-snippet">
+        <pre><code>
+            #include &lt;stdio.h>
+            int main() {
+                printf("Hello, World!\n");
+                return 0;
+            }
+        </code></pre>
+    </div>
+    <script>
+        document.querySelectorAll("div.real-code-snippet").forEach(el => {
+            hljs.highlightElement(el);
+        });
+    </script>
+</div>
