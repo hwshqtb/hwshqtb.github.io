@@ -11,8 +11,8 @@ int main() {
 </div>
 <div id="code-edit-div" style="display: none;">
     <button id="code-exit" type="button" onclick="exitFunction()">退出</button>
-    <button id="code-run" type="button">运行</button>
-    <pre id="real-code" contenteditable="true" oninput="inputFunction()">#include &lt;stdio.h>
+    <button id="code-run" type="button" onclick="runFunction()">运行</button>
+    <pre contenteditable="plaintext-only" oninput="inputFunction()"><code id="real-code">#include &lt;stdio.h>
 int main() {
     printf("Hello, World!\n");
     return 0;
@@ -28,8 +28,20 @@ int main() {
         document.getElementById("code-edit-div").style.display = "none";
         document.getElementById("code-show-div").style.display = "block";
     }
+    function runFunction() {
+        var http = new XMLHttpRequest();
+        http.open("POST", "http://coliru.stacked-crooked.com/compile", false);
+        http.send(JSON.stringify({ "cmd": "g++ main.cpp && ./a.out", "src": document.getElementById("real-code").innerText }));
+        alert(http.response);
+    }
     function inputFunction() {
-        alert(event.data);
+        var selection = getSelection();
+        var range = selection.getRangeAt(0);
+        range.setEndAfter(document.getElementById("real-code"));
+        range.setStart(range.endContainer, range.endOffset);
+        hljs.highlightElement(document.getElementById("real-code"));
+        selection.removeAllRanges();
+        selection.addRange(range);
     }
     hljs.highlightAll();
 </script>
