@@ -35,6 +35,7 @@ int main() {
         http.open("POST", "http://coliru.stacked-crooked.com/compile", false);
         alert(3);
         http.send(JSON.stringify({ "cmd": "g++ main.cpp && ./a.out", "src": document.getElementById("real-code").innerText }));
+        alert(4);
         alert(http.response);
     }
     function inputFunction() {
