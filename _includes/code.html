@@ -1,7 +1,6 @@
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
-
-<div>
+<div class="code-editor">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
     <div id="code-show-div">
         <button id="code-edit" type="button" onclick="editFunction()">编辑</button>
         这个编辑器使用了<a href="http://coliru.stacked-crooked.com">Coliru</a>
@@ -10,6 +9,10 @@ int main() {
     printf("Hello, World!\n");
     return 0;
 }</code></pre>
+        <p>运行结果</p>
+        <div>
+            <pre>{{example-code-result}}</pre>
+        </div>
     </div>
     <div id="code-edit-div" style="display: none;">
         <button id="code-exit" type="button" onclick="exitFunction()">退出</button>
@@ -20,35 +23,38 @@ int main() {
     printf("Hello, World!\n");
     return 0;
 }</code></pre>
+        <p>运行结果</p>
         <div>
             <pre><code id="code-result"></code></pre>
         </div>
     </div>
-</div>
 
-<script>
-    function editFunction() {
-        document.getElementById("code-show-div").style.display = "none";
-        document.getElementById("code-edit-div").style.display = "block";
-    }
-    function exitFunction() {
-        document.getElementById("code-edit-div").style.display = "none";
-        document.getElementById("code-show-div").style.display = "block";
-    }
-    function runFunction() {
-        var http = new XMLHttpRequest();
-        http.open("POST", "http://coliru.stacked-crooked.com/compile", false);
-        http.send(JSON.stringify({ "cmd": "g++ main.cpp && ./a.out", "src": document.getElementById("real-code").innerText }));
-        document.getElementById("code-result").innerText = http.response;
-    }
-    function inputFunction() {
-        var selection = getSelection();
-        var range = selection.getRangeAt(0);
-        range.setEndAfter(document.getElementById("real-code"));
-        range.setStart(range.endContainer, range.endOffset);
-        hljs.highlightElement(document.getElementById("real-code"));
-        selection.removeAllRanges();
-        selection.addRange(range);
-    }
-    hljs.highlightAll();
-</script>
+    <script>
+        function editFunction() {
+            document.getElementById("code-show-div").style.display = "none";
+            document.getElementById("code-edit-div").style.display = "block";
+            document.getElementById("code-result").innerText = "运行中";
+        }
+        function exitFunction() {
+            document.getElementById("code-edit-div").style.display = "none";
+            document.getElementById("code-show-div").style.display = "block";
+        }
+        function runFunction() {
+            document.getElementById("code-result").innerText = "运行中";
+            var http = new XMLHttpRequest();
+            http.open("POST", "http://coliru.stacked-crooked.com/compile", false);
+            http.send(JSON.stringify({ "cmd": "g++ main.cpp && ./a.out", "src": document.getElementById("real-code").innerText }));
+            document.getElementById("code-result").innerText = http.response;
+        }
+        function inputFunction() {
+            var selection = getSelection();
+            var range = selection.getRangeAt(0);
+            range.setEndAfter(document.getElementById("real-code"));
+            range.setStart(range.endContainer, range.endOffset);
+            hljs.highlightElement(document.getElementById("real-code"));
+            selection.removeAllRanges();
+            selection.addRange(range);
+        }
+        hljs.highlightAll();
+    </script>
+</div>
