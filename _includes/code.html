@@ -1,6 +1,6 @@
-<div class="code-editor">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"><div class="code-editor">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
     <div id="code-show-div">
         <button id="code-edit" type="button" onclick="editFunction()">编辑</button>
         这个编辑器使用了<a href="http://coliru.stacked-crooked.com">Coliru</a>
@@ -49,8 +49,11 @@ int main() {
         function inputFunction() {
             var selection = getSelection();
             var range = selection.getRangeAt(0);
-            range.setEndAfter(document.getElementById("real-code"));
-            range.setStart(range.endContainer, range.endOffset);
+            //range.setStartAfter(document.getElementById("real-code").children[0].children[0]);
+            //console.log(range.startContainer, range.startOffset);
+            console.log(range.endContainer, range.endOffset);
+            //range.setStart(range.endContainer, range.endOffset);
+            //range.setEnd(range.endContainer, range.endOffset);
             hljs.highlightElement(document.getElementById("real-code"));
             selection.removeAllRanges();
             selection.addRange(range);
