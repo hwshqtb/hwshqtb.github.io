@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "theme_version"
+# require_relative "theme_version"
 
 Gem::Specification.new do |spec|
   spec.name          = "hwshqtb.github.io"
