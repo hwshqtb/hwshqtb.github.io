@@ -8,7 +8,7 @@ module Jekyll
         self.process(@name)
         self.read_yaml(File.join(base, '_layouts'), 'tags-page.html')
         self.data['tag'] = tag
-        self.data['title'] = "拥有#{tag}tag的文章/页面"
+        self.data['title'] = "拥有#{tag} tag的文章/页面"
       end
     end
     class TagGenerator < Generator

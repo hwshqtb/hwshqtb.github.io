@@ -1,15 +1,21 @@
 title: hwshqtb's blog & wiki
-author:
-  name: hwshqtb
-  email: 1353736321@qq.com
+author: hwshqtb
+email: 1353736321@qq.com
+social_links:
+  - title: bilibili
+    url: "https://space.bilibili.com/272692391"
+  - title: github
+    url: "https://github.com/hwshqtb"
 logo: /hwshqtb.ico
 license: <p xmlns:cc="http://creativecommons.org/ns#" > 除非特别注明，本页内容采用以下授权方式：<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Creative Commons Attribution-ShareAlike 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt=""></a></p>
+
+
 permalink: /:categories/:title:output_ext
 
 # Build settings
 
 # If you clone the Minima repo and build locally, use this setting.
-theme: minima
+# theme: minima
 
 # As of November 2023, GitHub Pages still uses Minima 2.5.1 (https://pages.github.com/versions/). 
 # If you want to use the latest Minima version on GitHub Pages, use the following setting and 
@@ -27,41 +33,8 @@ plugins:
 header_pages:
   - about.md
 
-# Minima specific settings, which are only available from Minima 3.0 onward.
-minima:
-  # Minima skin selection.
-  # Available skins are:
-  # classic	           Default, light color scheme.
-  # dark	             Dark variant of the classic skin.
-  # auto	             Adaptive skin based on the default classic and dark skins.
-  # solarized-light	   Light variant of solarized color scheme.
-  # solarized-dark	   Dark variant of solarized color scheme.
-  # solarized	         Adaptive skin for solarized color scheme skins.
-  skin: classic
+  
 
-  # Set to `true` to show excerpts on the homepage.
-  show_excerpts: true
-
-  # Minima date format.
-  # The default value is "%b %d, %Y" (e.g. Nov 14, 2023) 
-  # Refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this.
-  date_format: "%Y年%m月%d日"
-
-  # Social Media Links
-  # Renders icons via Font Awesome Free webfonts CDN, based on ordered list of entries.
-  #
-  # Entry keys:
-  # * title    Tooltip rendered on hovering over icon.
-  # * icon     Font Awesome icon id. `github` corresponds to `fa-github`.
-  # * url      Full URL of social profile.
-  #social_links:
-  #  - title: Minima Theme repository at GitHub
-  #    icon: github
-  #    url: "https://github.com/jekyll/minima"
-  #  - title: Jekyll at X (formerly Twitter)
-  #    icon: x-twitter
-  #    url: "https://x.com/jekyllrb"
-  social_links:
-    - title: bilibili
-      icon: bilibili
-      url: "https://space.bilibili.com/272692391"
+show_excerpts: true
+  
+date_format: "%Y年%m月%d日"
