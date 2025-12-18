@@ -1,16 +1,8 @@
 ---
 layout: page
-title: About
+title: 关于
 ---
 
-The website is modified from the Jekyll theme Minima. 
+使用了 [jekyll 4](https://github.com/jekyll)
 
-the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-[jekyll-organization]: https://github.com/jekyll
+修改自 [Minima 2.5](https://github.com/jekyll/minima/tree/2.5-stable)
