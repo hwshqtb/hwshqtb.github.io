@@ -191,8 +191,8 @@
 
 .left-floating-content {
   width: $spacing-unit * 5;
-  padding: $spacing-unit / 2;
-  border-radius: $spacing-unit / 4;
+  padding: calc($spacing-unit / 2);
+  border-radius: calc($spacing-unit / 4);
   box-shadow: 0 4px 15px rgba(0,0,0,0.15);
   position: sticky;
   top: $spacing-unit * 2;
