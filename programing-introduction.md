@@ -7,23 +7,26 @@ license: <p xmlns:cc="http://creativecommons.org/ns#" >本文的授权方式为 
 modified_date: 2025-03-10
 
 categories: programing
-tags: programing-introduction
+main_part: 2
 excerpt: ""
 ---
 # 目录
 - 前言
 - 编程基础：程序员的自我修养
-    - 什么是编程：编程及计算机的发展史
-    - 编程三段论：编程过程的合理划分概述
-    - 编程工具介绍
-    - 编程能力及如何培养
-    - 附赠：c/c++入门
+  - [什么是编程：编程及计算机的发展史](/programing/definition)
+  - [编程三段论：编程过程的合理划分概述](/programing/phases)
+  - [编程能力及如何培养](/programing/learning)
+  - [实际开发流程](/programing/states)
+  - [c/c++入门](/programing/cpp)
 - 编程进阶：
-    - 数学基础
-    - 理论计算机科学
-    - 计算机系统
-    - 应用计算机技术
-    - 计算机构建
+  - 数学基础
+  - 理论计算机科学
+  - 计算机系统
+    - [计算机组成原理](/programing/organization)
+  - 应用计算机技术
+    - [区块链](/programing/blockchain)
+    - [数据库](/programing/database)
+  - 计算机构建
 - 编程深化：
 
 # 前言
