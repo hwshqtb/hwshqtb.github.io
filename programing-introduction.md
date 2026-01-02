@@ -22,6 +22,7 @@ excerpt: ""
   - 数学基础
   - 理论计算机科学
   - 计算机系统
+    - [操作系统](/programing/os)
     - [计算机组成原理](/programing/organization)
   - 应用计算机技术
     - [区块链](/programing/blockchain)
