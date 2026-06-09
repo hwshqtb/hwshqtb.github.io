@@ -20,3 +20,7 @@ header_pages:
 date_format: "%Y年%m月%d日"
 
 markdown: kramdown
+
+kramdown:
+  math_engine: null
+
