@@ -21,6 +21,9 @@ excerpt: ""
 - 编程进阶：
   - 数学基础
   - 理论计算机科学
+    - [基本算法](/programing/algorithm)
+    - [数据结构](/programing/structure)
+    - [特化算法](/programing/algorithm2)
   - 计算机系统
     - [操作系统](/programing/os)
     - [计算机组成原理](/programing/organization)
