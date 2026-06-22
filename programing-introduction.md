@@ -28,6 +28,7 @@ excerpt: ""
     - [操作系统](/programing/os)
     - [计算机组成原理](/programing/organization)
     - [计算机网络](/programing/network)
+    - [机器学习](/programing/ml)
   - 应用计算机技术
     - [区块链](/programing/blockchain)
     - [数据库](/programing/database)
