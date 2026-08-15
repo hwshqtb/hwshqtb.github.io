@@ -1,13 +1,14 @@
 ---
-layout: post
+layout: page
 
-title: 编程导论：1.3：编程能力及其培养
+title: 编程能力及其培养
 author: hwshqtb
 license: <p xmlns:cc="http://creativecommons.org/ns#" >本文的授权方式为 <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Creative Commons Attribution 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt=""></a></p>
 modified_date: 2025-04-08
 
-categories: programing
+categories: programing-introduction
 tags: programing-introduction
+order: 1.3
 excerpt: "归纳出编程能力并介绍如何培养。"
 ---
 #### 由前一篇文章的分析，可以归纳出编程能力具体有什么。在最基础的要求——正确性之外，以下按照重要性给出四种能力：

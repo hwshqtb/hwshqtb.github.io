@@ -1,12 +1,13 @@
 ---
-layout: post
+layout: page
 
-title: 编程导论：2.3.数据库及其管理系统
+title: 数据库及其管理系统
 author: hwshqtb
 license: <p xmlns:cc="http://creativecommons.org/ns#" >本文的授权方式为 <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Creative Commons Attribution 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt=""></a></p>
 
-categories: programing
+categories: programing-introduction
 tags: programing-introduction
+order: 2.4.2
 excerpt: "简要介绍数据库及数据库管理系统知识。"
 ---
 

@@ -1,13 +1,14 @@
 ---
-layout: post
+layout: page
 
-title: 编程导论：1.1：什么是编程
+title: 什么是编程
 author: hwshqtb
 license: <p xmlns:cc="http://creativecommons.org/ns#" >本文的授权方式为 <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Creative Commons Attribution 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt=""></a></p>
 modified_date: 2025-03-13
 
-categories: programing
+categories: programing-introduction
 tags: programing-introduction
+order: 1.1
 excerpt: "通过编程语言、计算机及其用途之演变史，给出编程的定义。"
 ---
 在讨论什么是编程之前，我们有必要回顾计算机的历史。
