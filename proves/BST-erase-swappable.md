@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: article
 
 title: 二叉搜索树删除操作的可交换性
+license: 本文的授权方式为 <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width:1em;max-height:1em;margin-left:.2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width:1em;max-height:1em;margin-left:.2em;">
 author: hwshqtb
-license: <p xmlns:cc="http://creativecommons.org/ns#" >本文的授权方式为 <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Creative Commons Attribution 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt=""></a></p>
 
 categories: proves
-tags: prove
+tags: proves
 excerpt: "证明了二叉搜索树删除操作可交换，当且仅当要删除的两节点存在父子关系，且父节点的另一个孩子不为其前驱/后继"
 ---
 

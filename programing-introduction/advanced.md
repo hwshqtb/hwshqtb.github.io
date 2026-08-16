@@ -1,10 +1,8 @@
 ---
-layout: page
+layout: article
 
 title: 编程进阶
 author: hwshqtb
-license: <p xmlns:cc="http://creativecommons.org/ns#" >本文的授权方式为 <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Creative Commons Attribution 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt=""></a></p>
-modified_date: 2025-03-10
 
 categories: programing-introduction
 order: 2

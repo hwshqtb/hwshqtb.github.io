@@ -1,9 +1,9 @@
 <div class="left-floating-content">
     <h2 class="post-list-heading">{{ page.list_title | default: "最近更新文章" }}</h2>
     <ul class="post-list">
-        {% for post in site.posts limit:5 %}
+        {% for post in site.data.recent %}
         <li>
-            <span class="post-meta">{{ post.date | date: site.date_format }}</span>
+            <span class="post-meta">{{ post.modified_date | default: post.date | date: site.date_format }}</span>
             <a class="post-link" href="{{ post.url | relative_url }}">
                 {{ post.title | escape }}
             </a>
