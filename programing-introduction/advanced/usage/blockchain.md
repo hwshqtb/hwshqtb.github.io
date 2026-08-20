@@ -3,7 +3,7 @@ layout: article
 
 title: 区块链
 author: hwshqtb
-modified_date: 2025-12-22
+date: 2025-12-22
 
 categories: programing-introduction
 tags: programing-introduction

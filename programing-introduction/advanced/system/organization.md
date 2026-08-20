@@ -3,7 +3,7 @@ layout: article
 
 title: 计算机组成原理
 author: hwshqtb
-modified_date: 2026-06-09
+date: 2026-06-09
 
 categories: programing-introduction
 tags: programing-introduction

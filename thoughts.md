@@ -3,7 +3,7 @@ layout: page
 
 title: 思考
 author: hwshqtb
-modified_date: 2025-03-10
+date: 2025-03-10
 
 tags: thoughts
 main_part: -0.1

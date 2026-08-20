@@ -3,7 +3,7 @@ layout: article
 
 title: 编程能力及其培养
 author: hwshqtb
-modified_date: 2025-04-08
+date: 2025-04-08
 
 categories: programing-introduction
 tags: programing-introduction

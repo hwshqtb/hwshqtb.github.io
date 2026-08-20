@@ -3,7 +3,7 @@ layout: article
 
 title: 操作系统
 author: hwshqtb
-modified_date: 2026-01-04
+date: 2026-01-04
 
 categories: programing-introduction
 tags: programing-introduction

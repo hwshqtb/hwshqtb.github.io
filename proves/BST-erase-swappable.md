@@ -4,6 +4,7 @@ layout: article
 title: 二叉搜索树删除操作的可交换性
 license: 本文的授权方式为 <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width:1em;max-height:1em;margin-left:.2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width:1em;max-height:1em;margin-left:.2em;">
 author: hwshqtb
+date: 2026-04-08
 
 categories: proves
 tags: proves

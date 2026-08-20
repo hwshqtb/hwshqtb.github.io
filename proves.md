@@ -3,7 +3,7 @@ layout: page
 
 title: 一些小证明
 author: hwshqtb
-modified_date: 2025-03-10
+date: 2025-03-10
 
 categories: proves
 main_part: 0

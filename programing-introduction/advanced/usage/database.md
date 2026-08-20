@@ -3,7 +3,7 @@ layout: article
 
 title: 数据库及其管理系统
 author: hwshqtb
-modified_date: 2025-12-22
+date: 2025-12-22
 
 categories: programing-introduction
 tags: programing-introduction

@@ -9,8 +9,8 @@ layout: default
   </div>
   {% endif %}
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title | escape }}</h1>
+  <header class="fullpage-header">
+    <h1 class="fullpage-title">{{ page.title | escape }}</h1>
     {% if page.excerpt %}
     <h4>{{ page.excerpt }}</h4>
     {% endif %}
@@ -23,7 +23,7 @@ layout: default
   </div>
   {% endif %}
 
-  <div class="post-content">
+  <div class="fullpage-content">
     {{ content }}
   </div>
 

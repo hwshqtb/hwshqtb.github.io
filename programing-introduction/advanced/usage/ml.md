@@ -3,7 +3,7 @@ layout: article
 
 title: 机器学习
 author: hwshqtb
-modified_date: 2026-06-22
+date: 2026-06-22
 
 categories: programing-introduction
 tags: programing-introduction

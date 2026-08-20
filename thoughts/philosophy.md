@@ -4,7 +4,7 @@ layout: article
 title: 再康德主义：先验唯物论体系
 license: 本系列内容采用以下授权方式：<a href="https://creativecommons.org/licenses/by-nd/4.0/">CC BY-ND 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width:1em;max-height:1em;margin-left:.2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width:1em;max-height:1em;margin-left:.2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" alt="" style="max-width:1em;max-height:1em;margin-left:.2em;">
 author: hwshqtb
-modified_date: 2026-08-15
+date: 2026-08-15
 
 categories: philosophy
 tags: thoughts

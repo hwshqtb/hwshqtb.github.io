@@ -3,7 +3,7 @@ layout: article
 
 title: 编程三段论
 author: hwshqtb
-modified_date: 2025-03-21
+date: 2025-03-21
 
 categories: programing-introduction
 tags: programing-introduction
