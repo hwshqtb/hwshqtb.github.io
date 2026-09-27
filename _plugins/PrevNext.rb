@@ -13,6 +13,7 @@ module Jekyll
   #     也会得到由这些后代文档构成的 data['toc_html']（嵌套目录），其本身在链中的位置不变；
   #   - 组内按序号升序连成链，结果写入 data['prev'] / data['next']，
   #     由 _includes/prevnext.html 渲染；目录由布局中的 page.toc_html 渲染。
+  #   - 显示时order中负数层级将被过滤
   class PrevNextGenerator < Generator
     safe true
     priority :low # 在其它 generator（如 TagsPage）之后运行，保证 site.pages 已完整
@@ -69,7 +70,7 @@ module Jekyll
         seg = segments(doc.data['order'])
         {
           :seg     => seg,
-          :display => seg.join('.'),
+          :display => seg.reject { |n| n.negative? }.join('.'),
           :title   => CGI.escapeHTML(doc.data['title'].to_s),
           :url     => CGI.escapeHTML(doc.url)
         }
