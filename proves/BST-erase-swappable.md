@@ -5,6 +5,7 @@ title: 二叉搜索树删除操作的可交换性
 license: 本文的授权方式为 <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width:1em;max-height:1em;margin-left:.2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width:1em;max-height:1em;margin-left:.2em;">
 author: hwshqtb
 date: 2026-04-08
+modified_date: 2026-11-26
 
 categories: proves
 tags: proves
@@ -122,12 +123,14 @@ $$
 综合以上四种情形的论证，得到本文的核心定理。
 
 **定理 3.1（两删除操作可交换的充要条件）**  
-设 $T$ 为元素两两不同的 BST，$a,b$ 为两个不同键，记 $T'$ 为在 $T$ 上删除 $a$ 后所得之树。则删除 $a$ 与删除 $b$ **不可交换**当且仅当：
+设 $T$ 为元素两两不同的 BST，$a,b$ 为两个不同键，记 $T'$ 为在 $T$ 上删除 $a$ 后所得之树。设条件 $Judge(a, b)$ 为：
 1. $\operatorname{type}_T(b)=1$；
 2. $\operatorname{type}_{T'}(b)=2$；
 3. 在 $T$ 中，$b$ 的中序后继不是 $b$ 的右孩子。
 
 此时，删除 $a$ 的操作最终物理删除的节点恰为 $b$ 的左孩子（该左孩子为叶子节点，且是 $b$ 左子树中的唯一节点）。
+
+那么删除 $a$ 与删除 $b$ **不可交换** 当且仅当 $Judge(a,b)$ 与 $Judge(b,a)$ 至少有一为真。
 
 **推论 3.1（不可交换性的结构特征）**  
 上述条件等价于：在 $T$ 中存在一个节点 $x$（对应 $b$）满足：
@@ -171,12 +174,19 @@ $$
 
 若 BST 的删除操作在节点有两个孩子时采用中序前驱（即左子树中的最大键）替代被删节点，则前述结论有完全对称的版本。
 
-记 $\operatorname{type}^*_T(u)$ 为使用前驱替代时的删除类型（定义与前述类似，仅将后继换为前驱）。对于两个不同键 $a,b$，删除操作不可交换的充要条件为：
+记 $\operatorname{type}^*_T(u)$ 为使用前驱替代时的删除类型（定义与前述类似，仅将后继换为前驱）。
 
-1. $\operatorname{type}_T(b)=1$（$b$ 原有两个孩子）；
-2. 在 $T$ 上删除 $a$ 后，$b$ 的类型变为 $2$（即 $b$ 失去恰好一个孩子）；
+对于两个不同键 $a,b$，设条件 $Judge^*(a, b)$ 为：
+1. $\operatorname{type}^*_T(b)=1$；
+2. $\operatorname{type}^*_{T'}(b)=2$；
 3. 在 $T$ 中，$b$ 的中序前驱不是 $b$ 的左孩子。
 
 此时，先删除 $a$ 的操作最终物理删除的节点恰为 $b$ 的右孩子（该右孩子为叶子节点，且是 $b$ 右子树中的唯一节点）。
 
+那么删除 $a$ 与删除 $b$ **不可交换** 当且仅当 $$Judge^*(a, b)$$ 与 $Judge^*(b, a)$ 至少有一为真。
+
 相应地，基于后序遍历序列可给出类似的模式判据：存在不可交换对当且仅当后序遍历序列中存在形如 $s_1,\dots,s_n, y, x$ 的前缀，满足 $s_i < x < y$，且 $x$ 的前驱在 $\{s_i\}$ 中，且 $s_n$ 不是 $\{s_i\}$ 中的最大值。
+
+# 修改历史
+
+- 2026-11-26：修正了定理3.1的不对称情况，并同步了第5节的相应结论。
