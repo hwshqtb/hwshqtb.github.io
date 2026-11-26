@@ -13,4 +13,4 @@ code: |
   }
 ---
 
-{% include code.html %}
+{% include hello/code.html %}
